@@ -1,0 +1,9 @@
+- name: index.html on app 1
+  hosts: app1.c3e1.internal
+  gather_facts: false
+  become: true
+
+  roles:
+    - index_html_on_app1
+    
+
